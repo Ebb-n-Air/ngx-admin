@@ -1,4 +1,4 @@
-<span>Traffic</span>
+<span>Total vehicle KM driven</span>
 <nb-select matRipple [selected]="type" (selectedChange)="changePeriod($event)">
   <nb-option matRipple *ngFor="let period of types" [value]="period">{{ period }}</nb-option>
 </nb-select>

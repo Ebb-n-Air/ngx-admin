@@ -67,6 +67,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
+    this.themeService.changeTheme('material-dark');
+    //this.themeService.changeTheme('Dark');
+    //this.themeService.changeTheme('De');
     this.currentTheme = this.themeService.currentTheme;
 
     this.userService.getUsers()
@@ -90,6 +93,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
         this.currentTheme = themeName;
         this.rippleService.toggle(themeName?.startsWith('material'));
       });
+
   }
 
   ngOnDestroy() {

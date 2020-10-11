@@ -1,7 +1,7 @@
 import { NbJSThemeOptions } from '@nebular/theme';
 
 const palette = {
-  primary: '#e91d63',
+  primary: '#58ad5f',
   success: '#60af20',
   info: '#0495ee',
   warning: '#ff9f05',
@@ -39,10 +39,10 @@ export const baseTheme: NbJSThemeOptions = {
     warning: palette.warning,
     danger: palette.danger,
 
-    primaryLight: '#f24681',
-    successLight: '#8fcf50',
+    primaryLight: '#67c96f',
+    successLight: '#7acf50',
     infoLight: '#40bbf4',
-    warningLight: '#ffbe43',
+    warningLight: '#ff9a3b',
     dangerLight: '#cf3341',
   },
 };
@@ -222,8 +222,8 @@ export const MATERIAL_DARK_THEME = {
       firstShadowLineDarkBg: 'rgba(0, 0, 0, 0)',
 
       // second line
-      secondLineGradFrom: baseThemeVariables.primary,
-      secondLineGradTo: baseThemeVariables.primary,
+      secondLineGradFrom: baseThemeVariables.danger,
+      secondLineGradTo: baseThemeVariables.danger,
 
       secondAreaGradFrom: 'rgba(51, 102, 255, 0.2)',
       secondAreaGradTo: 'rgba(51, 102, 255, 0)',
@@ -254,8 +254,8 @@ export const MATERIAL_DARK_THEME = {
       firstLineShadow: 'rgba(0, 0, 0, 0)',
 
       // second bar
-      secondLineGradFrom: baseThemeVariables.primary,
-      secondLineGradTo: baseThemeVariables.primary,
+      secondLineGradFrom: baseThemeVariables.danger,
+      secondLineGradTo: baseThemeVariables.danger,
       secondLineShadow: 'rgba(0, 0, 0, 0)',
 
       // third bar
@@ -266,7 +266,7 @@ export const MATERIAL_DARK_THEME = {
 
     orderProfitLegend: {
       firstItem: baseThemeVariables.success,
-      secondItem: baseThemeVariables.primary,
+      secondItem: baseThemeVariables.danger,
       thirdItem: baseThemeVariables.bg3,
     },
 
@@ -336,8 +336,8 @@ export const MATERIAL_DARK_THEME = {
       firstPieGradientRight: baseThemeVariables.success,
       firstPieShadowColor: 'rgba(0, 0, 0, 0)',
 
-      secondPieGradientLeft: baseThemeVariables.primary,
-      secondPieGradientRight: baseThemeVariables.primary,
+      secondPieGradientLeft: baseThemeVariables.danger,
+      secondPieGradientRight: baseThemeVariables.danger,
       secondPieShadowColor: 'rgba(0, 0, 0, 0)',
 
       thirdPieGradientLeft: baseThemeVariables.warning,

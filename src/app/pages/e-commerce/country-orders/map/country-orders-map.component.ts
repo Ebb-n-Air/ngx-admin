@@ -27,15 +27,15 @@ export class CountryOrdersMapComponent implements OnDestroy {
   selectedCountry;
 
   options = {
-    zoom: 2,
+    zoom: 3,
     minZoom: 2,
     maxZoom: 6,
     zoomControl: false,
-    center: L.latLng({lat: 38.991709, lng: -76.886109}),
-    maxBounds: new L.LatLngBounds(
-      new L.LatLng(-89.98155760646617, -180),
-      new L.LatLng(89.99346179538875, 180),
-    ),
+    center: L.latLng({lat: -33.918861, lng: 18.423300}),
+    // maxBounds: new L.LatLngBounds(
+    //   new L.LatLng(-89.98155760646617, -180),
+    //   new L.LatLng(89.99346179538875, 180),
+    // ),
     maxBoundsViscosity: 1.0,
   };
 
@@ -124,6 +124,7 @@ export class CountryOrdersMapComponent implements OnDestroy {
       this.resetHighlight(this.selectedCountry);
       this.highlightFeature(featureLayer);
       this.selectedCountry = featureLayer;
+      console.log("feature layer",featureLayer)
       this.select.emit(featureLayer.feature.properties.name);
     }
   }

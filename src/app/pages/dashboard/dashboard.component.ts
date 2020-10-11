@@ -16,6 +16,7 @@ interface CardSettings {
 })
 export class DashboardComponent implements OnDestroy {
 
+  readonly position = { lat: -33.918861, lng: 18.423300};
   private alive = true;
 
   solarValue: number;

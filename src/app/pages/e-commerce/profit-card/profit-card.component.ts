@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ProfitCardComponent {
 
-  flipped = false;
+  flipped = true;
 
   toggleView() {
     this.flipped = !this.flipped;

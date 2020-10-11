@@ -18,13 +18,12 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'bar-chart-outline',
     link: '/pages/iot-dashboard',
   },
-  {
-    title: 'FEATURES',
-    group: true,
-  },
   //@TODO user management
-  //@TODO 
 
+  // {
+  //   title: 'FEATURES',
+  //   group: true,
+  // },
   // {
   //   title: 'Layout',
   //   icon: 'layout-outline',

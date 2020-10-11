@@ -45,15 +45,11 @@ export class ChartPanelHeaderComponent implements OnDestroy {
     this.chartLegend = [
       {
         iconColor: orderProfitLegend.firstItem,
-        title: 'Payment',
+        title: 'Cost with SEON',
       },
       {
         iconColor: orderProfitLegend.secondItem,
-        title: 'Canceled',
-      },
-      {
-        iconColor: orderProfitLegend.thirdItem,
-        title: 'All orders',
+        title: 'Cost with previous system',
       },
     ];
   }

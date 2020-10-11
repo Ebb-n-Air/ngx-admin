@@ -11,7 +11,7 @@ import { CountryOrderData } from '../../../@core/data/country-order';
       <nb-card-header>Country Orders Statistics</nb-card-header>
       <nb-card-body>
         <ngx-country-orders-map (select)="selectCountryById($event)"
-                                countryId="USA">
+                                countryId="ZAF">
         </ngx-country-orders-map>
         <ngx-country-orders-chart [countryName]="countryName"
                                   [data]="countryData"
@@ -58,6 +58,7 @@ export class CountryOrdersComponent implements OnInit, OnDestroy {
       .pipe(takeWhile(() => this.alive))
       .subscribe((countryData) => {
         this.countryData = countryData;
+        console.log("data",countryData);
       });
   }
 

@@ -6,8 +6,8 @@ import { StatsBarData } from '../data/stats-bar';
 export class StatsBarService extends StatsBarData {
 
   private statsBarData: number[] = [
-    300, 520, 435, 530,
-    730, 620, 660, 860,
+    300000, 520000, 435000, 530000,
+    730000, 620000, 660000, 860000,
   ];
 
   getStatsBarData(): Observable<number[]> {
